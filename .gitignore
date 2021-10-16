@@ -4,17 +4,32 @@
 /dist
 /tmp
 /out-tsc
-# Only exists if Bazel was run
-/bazel-out
+/documentation
+
+# test output
+test-results.xml
+
+# docs archives
+docs.tar.gz
+docs.zip
+
+# spartacussampledataaddon
+spartacussampledataaddon.*
+spartacussampledata.*
 
 # dependencies
-/node_modules
+node_modules/
+package-lock.json
 
-# profiling files
-chrome-profiler-events*.json
+# verdaccio storage
+scripts/install/storage
+scripts/install/htpasswd
+# Environment config file
+scripts/install/config.sh
 
 # IDEs and editors
 /.idea
+*.iml
 .project
 .classpath
 .c9/
@@ -23,23 +38,25 @@ chrome-profiler-events*.json
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+.vscode/settings.json
+
+# Coverage reports
+**/coverage
 
 # misc
 /.sass-cache
 /connect.lock
-/coverage
 /libpeerconnection.log
+/typings
+
+# Logs
 npm-debug.log
 yarn-error.log
 testem.log
-/typings
+debug.log
 
 # System Files
 .DS_Store
 Thumbs.db
+
+**/git-ignore
