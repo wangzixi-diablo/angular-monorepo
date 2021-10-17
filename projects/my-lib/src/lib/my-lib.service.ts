@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class MyLibService {
 
   constructor() { }
+
+  jerryPrint(){
+    console.log('Jerry service developed in Lib!');
+  }
 }
