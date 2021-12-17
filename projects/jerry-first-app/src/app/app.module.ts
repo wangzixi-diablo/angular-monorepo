@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { MyLibModule } from 'my-lib';
-import { MyLibService } from 'projects/my-lib/src/public-api';
+// import { MyLibService } from 'projects/my-lib/src/public-api';
+
+import { MyLibService } from 'my-lib';
 
 @NgModule({
   declarations: [
